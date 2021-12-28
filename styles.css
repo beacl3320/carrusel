@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1d1d1f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    text-align: center;
+    margin: 50px 0;;
+}
+
+.text h1{
+    font-size: 5rem;
+}
+
+.text a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: crimson;
+}
+.contenedor{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.carousel__contenedor{
+    position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: 40%;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+    opacity: 100%;
+}
+
+.carousel__anterior{
+    left: -30px;
+}
+
+.carousel__siguiente{
+    right: -30px;
+}
+
+.carousel__element{
+    text-align: center;
+}
+
+.carousel__indicadores .glider-dot{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover{
+    opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active{
+    opacity: .1;
+}
+
+
+
